@@ -1,0 +1,774 @@
+Zesco Electricity Payment
+Request:
+
+{
+  "amount": "1000",
+  "bankId": "",
+  "currencyType": "ZMW",
+  "extra": "",
+  "fromDate": "",
+  "msisdn": "971255490",
+  "nickName": "ZESCOPP",
+  "paymentType": "ZMPAYBILLS",
+  "pin": "1235",
+  "prefetchResponseCustomerReference": "",
+  "prn": "",
+  "productName": "",
+  "referenceNumber": "07073344967",
+  "schoolAgentCode": "",
+  "schoolCode": "",
+  "studentName": "",
+  "taxPayerName": "",
+  "tin": "",
+  "toDate": ""
+}
+
+Response: 400
+{
+  "status": "1500",
+  "error": "Bad request from the customer",
+  "message": "Transaction Failed with TXN Id : MP190807.1356.H00029, Transaction is not completed due to some technical problem.Please Try again later  REFERENCE NO :07073344967"
+}
+
+2. Vitalite Solar Payments
+
+Request 1:
+{
+  "amount": "500",
+  "bankId": "",
+  "currencyType": "ZMW",
+  "extra": "",
+  "fromDate": "",
+  "msisdn": "975031664",
+  "nickName": "VITALITE",
+  "paymentType": "ZMPAYBILLS",
+  "pin": "1235",
+  "prefetchResponseCustomerReference": "",
+  "prn": "",
+  "productName": "",
+  "referenceNumber": "123",
+  "schoolAgentCode": "",
+  "schoolCode": "",
+  "studentName": "",
+  "taxPayerName": "",
+  "tin": "",
+  "toDate": ""
+}
+
+Request 2:
+{
+  "amount": "500",
+  "bankId": "",
+  "currencyType": "ZMW",
+  "extra": "",
+  "fromDate": "",
+  "msisdn": "971255490",
+  "nickName": "VITALITE",
+  "paymentType": "ZMPAYBILLS",
+  "pin": "1235",
+  "prefetchResponseCustomerReference": "",
+  "prn": "",
+  "productName": "",
+  "referenceNumber": "123",
+  "schoolAgentCode": "",
+  "schoolCode": "",
+  "studentName": "",
+  "taxPayerName": "",
+  "tin": "",
+  "toDate": ""
+}
+
+Response 1:
+
+{
+  "status": "1500",
+  "error": "Bad request from the customer",
+  "message": "Transaction Failed with TXN Id : MP190807.1359.H00030, Sender is barred  REFERENCE NO :123"
+}
+
+Respose 2: 400
+{
+  "status": "1008",
+  "error": "Bad request from the customer",
+  "message": "Trans Id:MP190807.1406.H00035 Payment to VITALITE is in progress. Transaction Amt:500.00 ZMW. Your balance is :564516868.95 ZMW  REFERENCE NO :123"
+}
+
+3. DSTV
+Request 1:
+{
+  "amount": "1000",
+  "bankId": "",
+  "currencyType": "ZMW",
+  "extra": "",
+  "fromDate": "",
+  "msisdn": "971255490",
+  "nickName": "DSTV",
+  "paymentType": "ZMPAYBILLS",
+  "pin": "1235",
+  "prefetchResponseCustomerReference": "",
+  "prn": "",
+  "productName": "",
+  "referenceNumber": "4273577315",
+  "schoolAgentCode": "",
+  "schoolCode": "",
+  "studentName": "",
+  "taxPayerName": "",
+  "tin": "",
+  "toDate": ""
+}
+
+Response 1:
+{
+  "status": "1500",
+  "error": "Bad request from the customer",
+  "message": "Transaction Failed with TXN Id : MP190807.1402.H00032, Sender is barred  REFERENCE NO :4273577315"
+}
+
+Request 2:
+{
+  "amount": "1000",
+  "bankId": "",
+  "currencyType": "ZMW",
+  "extra": "",
+  "fromDate": "",
+  "msisdn": "971255490",
+  "nickName": "DSTV",
+  "paymentType": "ZMPAYBILLS",
+  "pin": "1235",
+  "prefetchResponseCustomerReference": "",
+  "prn": "",
+  "productName": "",
+  "referenceNumber": "4273577315",
+  "schoolAgentCode": "",
+  "schoolCode": "",
+  "studentName": "",
+  "taxPayerName": "",
+  "tin": "",
+  "toDate": ""
+}
+
+
+Response 2:
+{
+  "status": "200",
+  "message": "Txn. ID : MP190807.1414.H00036. Payment to DSTV Account 4273577315 of ZMW 500.00 is successful. Your Airtel Money balance is ZMW 564516368.95  REFERENCE NO :4273577315",
+  "txnId": "MP190807.1414.H00036",
+  "trId": "971255490201908071414H9385"
+}
+
+4.Muvi TV
+
+Request:
+{
+  "amount": "500",
+  "bankId": "",
+  "currencyType": "ZMW",
+  "extra": "",
+  "fromDate": "",
+  "msisdn": "971255490",
+  "nickName": "MUVITV1",
+  "paymentType": "ZMPAYBILLS",
+  "pin": "1235",
+  "prefetchResponseCustomerReference": "",
+  "prn": "",
+  "productName": "",
+  "referenceNumber": "20399166105",
+  "schoolAgentCode": "",
+  "schoolCode": "",
+  "studentName": "",
+  "taxPayerName": "",
+  "tin": "",
+  "toDate": ""
+}
+
+Response:
+{
+  "status": "200",
+  "message": "Txn. ID : MP190807.1420.H00042. Payment to MUVITV1 Account 20399166105 of ZMW 500.00 is successful. Your Airtel Money balance is ZMW 564512868.95  REFERENCE NO :20399166105",
+  "txnId": "MP190807.1420.H00042",
+  "trId": "971255490201908071420H9443"
+}
+
+5. Zuku TV
+Response:
+{
+  "amount": "500",
+  "bankId": "",
+  "currencyType": "ZMW",
+  "extra": "",
+  "fromDate": "",
+  "msisdn": "971255490",
+  "nickName": "ZUKU",
+  "paymentType": "ZMPAYBILLS",
+  "pin": "1235",
+  "prefetchResponseCustomerReference": "",
+  "prn": "",
+  "productName": "",
+  "referenceNumber": "900032",
+  "schoolAgentCode": "",
+  "schoolCode": "",
+  "studentName": "",
+  "taxPayerName": "",
+  "tin": "",
+  "toDate": ""
+}
+
+Response:
+
+{
+  "status": "200",
+  "message": "Txn. ID : MP190807.1426.H00001. Payment to ZUKU Account 900032 of ZMW 500.00 is successful. Your Airtel Money balance is ZMW 564512368.95  REFERENCE NO :900032",
+  "txnId": "MP190807.1426.H00001",
+  "trId": "971255490201908071426H0057"
+}
+
+6.Kwese TV
+Response:
+{
+  "amount": "500",
+  "bankId": "",
+  "currencyType": "ZMW",
+  "extra": "",
+  "fromDate": "",
+  "msisdn": "971255490",
+  "nickName": "KWESE",
+  "paymentType": "ZMPAYBILLS",
+  "pin": "1235",
+  "prefetchResponseCustomerReference": "",
+  "prn": "",
+  "productName": "",
+  "referenceNumber": "09876543",
+  "schoolAgentCode": "",
+  "schoolCode": "",
+  "studentName": "",
+  "taxPayerName": "",
+  "tin": "",
+  "toDate": ""
+}
+
+Response: 400
+{
+  "status": "1008",
+  "error": "Bad request from the customer",
+  "message": "Trans Id:MP190807.1430.H00002 Payment to KWESE is in progress. Transaction Amt:500.00 ZMW. Your balance is :564511368.95 ZMW  REFERENCE NO :09876543"
+}
+
+7. Lusaka Water Prepaid
+Response:
+{
+  "amount": "500",
+  "bankId": "",
+  "currencyType": "ZMW",
+  "extra": "",
+  "fromDate": "",
+  "msisdn": "971255490",
+  "nickName": "LWSC",
+  "paymentType": "ZMPAYBILLS",
+  "pin": "1235",
+  "prefetchResponseCustomerReference": "",
+  "prn": "",
+  "productName": "",
+  "referenceNumber": "5057557",
+  "schoolAgentCode": "",
+  "schoolCode": "",
+  "studentName": "",
+  "taxPayerName": "",
+  "tin": "",
+  "toDate": ""
+}
+
+Response:
+{
+  "status": "200",
+  "message": "Txn. ID : MP190807.1431.H00004. Payment to LWSC Account 5057557 of ZMW 500.00 is successful. Your Airtel Money balance is ZMW 564510868.95  REFERENCE NO :5057557",
+  "txnId": "MP190807.1431.H00004",
+  "trId": "971255490201908071431H0096"
+}
+
+8. Nkana Water
+Response:
+{
+  "amount": "500",
+  "bankId": "",
+  "currencyType": "ZMW",
+  "extra": "",
+  "fromDate": "",
+  "msisdn": "971255490",
+  "nickName": "NORTHWEST",
+  "paymentType": "ZMPAYBILLS",
+  "pin": "1235",
+  "prefetchResponseCustomerReference": "",
+  "prn": "",
+  "productName": "",
+  "referenceNumber": "120019050018",
+  "schoolAgentCode": "",
+  "schoolCode": "",
+  "studentName": "",
+  "taxPayerName": "",
+  "tin": "",
+  "toDate": ""
+}
+
+Response:
+{
+  "status": "200",
+  "message": "Txn. ID : MP190807.1433.H00005. Payment to NORTHWEST Account 120019050018 of ZMW 500.00 is successful. Your Airtel Money balance is ZMW 564510368.95  REFERENCE NO :120019050018",
+  "txnId": "MP190807.1433.H00005",
+  "trId": "971255490201908071433H0116"
+}
+
+9.North Western Water
+Request:
+{
+  "amount": "500",
+  "bankId": "",
+  "currencyType": "ZMW",
+  "extra": "",
+  "fromDate": "",
+  "msisdn": "971255490",
+  "nickName": "NORTHWEST",
+  "paymentType": "ZMPAYBILLS",
+  "pin": "1235",
+  "prefetchResponseCustomerReference": "",
+  "prn": "",
+  "productName": "",
+  "referenceNumber": "MW1539",
+  "schoolAgentCode": "",
+  "schoolCode": "",
+  "studentName": "",
+  "taxPayerName": "",
+  "tin": "",
+  "toDate": ""
+}
+
+Response:
+{
+  "status": "200",
+  "message": "Txn. ID : MP190807.1434.H00006. Payment to NORTHWEST Account MW1539 of ZMW 500.00 is successful. Your Airtel Money balance is ZMW 564509868.95  REFERENCE NO :MW1539",
+  "txnId": "MP190807.1434.H00006",
+  "trId": "971255490201908071434H0136"
+}
+
+10.Eastern Water
+Request:
+{
+  "amount": "500",
+  "bankId": "",
+  "currencyType": "ZMW",
+  "extra": "",
+  "fromDate": "",
+  "msisdn": "971255490",
+  "nickName": "EWSC",
+  "paymentType": "ZMPAYBILLS",
+  "pin": "1235",
+  "prefetchResponseCustomerReference": "",
+  "prn": "",
+  "productName": "",
+  "referenceNumber": "545478",
+  "schoolAgentCode": "",
+  "schoolCode": "",
+  "studentName": "",
+  "taxPayerName": "",
+  "tin": "",
+  "toDate": ""
+}
+
+Response:
+{
+  "status": "200",
+  "message": "Txn. ID : MP190807.1436.H00007. Payment to EWSC Account 545478 of ZMW 500.00 is successful. Your Airtel Money balance is ZMW 564509368.95  REFERENCE NO :545478",
+  "txnId": "MP190807.1436.H00007",
+  "trId": "971255490201908071436H0145"
+}
+
+11.Kafubu Water
+Request:
+{
+  "amount": "500",
+  "bankId": "",
+  "currencyType": "ZMW",
+  "extra": "",
+  "fromDate": "",
+  "msisdn": "971255490",
+  "nickName": "KAFUBU",
+  "paymentType": "ZMPAYBILLS",
+  "pin": "1235",
+  "prefetchResponseCustomerReference": "",
+  "prn": "",
+  "productName": "",
+  "referenceNumber": "213434",
+  "schoolAgentCode": "",
+  "schoolCode": "",
+  "studentName": "",
+  "taxPayerName": "",
+  "tin": "",
+  "toDate": ""
+}
+
+Response:
+{
+  "status": "200",
+  "message": "Txn. ID : MP190808.0707.H00009. Payment to KAFUBU Account 213434 of ZMW 500.00 is successful. Your Airtel Money balance is ZMW 564508868.95  REFERENCE NO :213434",
+  "txnId": "MP190808.0707.H00009",
+  "trId": "971255490201908080707H4877"
+}
+
+12.Southern Water
+Request:
+{
+  "amount": "500",
+  "bankId": "",
+  "currencyType": "ZMW",
+  "extra": "",
+  "fromDate": "",
+  "msisdn": "971255490",
+  "nickName": "SWSC",
+  "paymentType": "ZMPAYBILLS",
+  "pin": "1235",
+  "prefetchResponseCustomerReference": "",
+  "prn": "",
+  "productName": "",
+  "referenceNumber": "65677567",
+  "schoolAgentCode": "",
+  "schoolCode": "",
+  "studentName": "",
+  "taxPayerName": "",
+  "tin": "",
+  "toDate": ""
+}
+
+Response:
+{
+  "status": "200",
+  "message": "Txn. ID : MP190808.0708.H00010. Payment to SWSC Account 65677567 of ZMW 500.00 is successful. Your Airtel Money balance is ZMW 564508368.95  REFERENCE NO :65677567",
+  "txnId": "MP190808.0708.H00010",
+  "trId": "971255490201908080708H4889"
+}
+
+13.ZRA Domestic Tax-getPRN
+Request:
+{
+  "amount": "500",
+  "bankId": "",
+  "currencyType": "ZMW",
+  "extra": "",
+  "fromDate": "",
+  "msisdn": "971255490",
+  "nickName": "",
+  "paymentType": "ZMPAYBILLS",
+  "pin": "1235",
+  "prefetchResponseCustomerReference": "",
+  "prn": "",
+  "productName": "",
+  "referenceNumber": "919002143538",
+  "schoolAgentCode": "",
+  "schoolCode": "",
+  "studentName": "",
+  "taxPayerName": "",
+  "tin": "",
+  "toDate": ""
+}
+
+Response:
+{
+  "status": "400",
+  "error": "Bad request from the customer",
+  "message": "must not be empty"
+}
+
+14. ZRA Domestic Tax
+
+Request:
+{
+  "amount": "1000",
+  "bankId": "",
+  "currencyType": "ZMW",
+  "extra": "",
+  "fromDate": "",
+  "msisdn": "971255490",
+  "nickName": "ZRA",
+  "paymentType": "ZMPAYBILLS",
+  "pin": "1235",
+  "prefetchResponseCustomerReference": "",
+  "prn": "",
+  "productName": "",
+  "referenceNumber": "919002143538",
+  "schoolAgentCode": "",
+  "schoolCode": "",
+  "studentName": "",
+  "taxPayerName": "",
+  "tin": "",
+  "toDate": ""
+}
+
+Response:
+{
+  "status": "1500",
+  "error": "Bad request from the customer",
+  "message": "Transaction Failed with TXN Id : MP190808.0713.H00013, PRN/Amount entered are incorrect  REFERENCE NO :919002143538"
+}
+
+15. FISP- No DATA
+
+16.MLIFE
+Request:
+{
+  "amount": "1000",
+  "bankId": "",
+  "currencyType": "ZMW",
+  "extra": "",
+  "fromDate": "",
+  "msisdn": "971255490",
+  "nickName": "MLIFE",
+  "paymentType": "ZMPAYBILLS",
+  "pin": "1235",
+  "prefetchResponseCustomerReference": "",
+  "prn": "",
+  "productName": "",
+  "referenceNumber": "978981393",
+  "schoolAgentCode": "",
+  "schoolCode": "",
+  "studentName": "",
+  "taxPayerName": "",
+  "tin": "",
+  "toDate": ""
+}
+
+Response:
+{
+  "status": "200",
+  "message": "Txn. ID : MP190808.0716.H00014. Payment to MLIFE Account 978981393 of ZMW 1000.00 is successful. Your Airtel Money balance is ZMW 564505368.95  REFERENCE NO :978981393",
+  "txnId": "MP190808.0716.H00014",
+  "trId": "971255490201908080716H4942"
+}
+
+17. Vision Fund
+
+Request:
+{
+  "amount": "1000",
+  "bankId": "",
+  "currencyType": "ZMW",
+  "extra": "",
+  "fromDate": "",
+  "msisdn": "971255490",
+  "nickName": "VFUND",
+  "paymentType": "ZMPAYBILLS",
+  "pin": "1235",
+  "prefetchResponseCustomerReference": "",
+  "prn": "",
+  "productName": "",
+  "referenceNumber": "978981393",
+  "schoolAgentCode": "",
+  "schoolCode": "",
+  "studentName": "",
+  "taxPayerName": "",
+  "tin": "",
+  "toDate": ""
+}
+
+Response:
+{
+  "status": "1008",
+  "error": "Bad request from the customer",
+  "message": "Trans Id:MP190808.0718.H00015 Payment to Vision is in progress. Transaction Amt:1000.00 ZMW. Your balance is :564504368.95 ZMW  REFERENCE NO :978981393"
+}
+
+18. TopStarTv Payment
+
+Request:
+{
+  "amount": "1000",
+  "bankId": "",
+  "currencyType": "ZMW",
+  "extra": "",
+  "fromDate": "",
+  "msisdn": "971255490",
+  "nickName": "TOPSTARZM",
+  "paymentType": "ZMPAYBILLS",
+  "pin": "1235",
+  "prefetchResponseCustomerReference": "",
+  "prn": "",
+  "productName": "",
+  "referenceNumber": "02168166000",
+  "schoolAgentCode": "",
+  "schoolCode": "",
+  "studentName": "",
+  "taxPayerName": "",
+  "tin": "",
+  "toDate": ""
+}
+
+Response:
+{
+  "status": "1008",
+  "error": "Bad request from the customer",
+  "message": "Trans Id:MP190808.0720.H00016 Payment to TOPSTAR is in progress. Transaction Amt:1000.00 ZMW. Your balance is :564503368.95 ZMW  REFERENCE NO :02168166000"
+}
+
+19. GOTV
+Request:
+{
+  "amount": "1000",
+  "bankId": "",
+  "currencyType": "ZMW",
+  "extra": "",
+  "fromDate": "",
+  "msisdn": "971255490",
+  "nickName": "GOTV",
+  "paymentType": "ZMPAYBILLS",
+  "pin": "1235",
+  "prefetchResponseCustomerReference": "",
+  "prn": "",
+  "productName": "",
+  "referenceNumber": "2022426348",
+  "schoolAgentCode": "",
+  "schoolCode": "",
+  "studentName": "",
+  "taxPayerName": "",
+  "tin": "",
+  "toDate": ""
+}
+
+Response: 400
+{
+  "status": "1500",
+  "error": "Bad request from the customer",
+  "message": "Transaction Failed with TXN Id : MP190808.0721.H00017, $MESSAGE  REFERENCE NO :2022426348"
+}
+
+{
+  "status": "200",
+  "message": "Txn. ID : MP190808.1446.H00024. Payment to GOTV Account 2022426348 of ZMW 1000.00 is successful. Your Airtel Money balance is ZMW 564480568.95  REFERENCE NO :2022426348",
+  "txnId": "MP190808.1446.H00024",
+  "trId": "971255490201908081446H3152"
+}
+
+20. Box Office
+Request:
+{
+  "amount": "1000",
+  "bankId": "",
+  "currencyType": "ZMW",
+  "extra": "",
+  "fromDate": "",
+  "msisdn": "971255490",
+  "nickName": "DSTV",
+  "paymentType": "ZMPAYBILLS",
+  "pin": "1235",
+  "prefetchResponseCustomerReference": "",
+  "prn": "",
+  "productName": "",
+  "referenceNumber": "BO4273577315",
+  "schoolAgentCode": "",
+  "schoolCode": "",
+  "studentName": "",
+  "taxPayerName": "",
+  "tin": "",
+  "toDate": ""
+}
+
+Response:200
+{
+  "status": "200",
+  "message": "Txn. ID : MP190808.0725.H00018. Payment to Box office Movie Rental Account BO4273577315 of ZMW 1000.00 is successful. Your Airtel Money balance is ZMW 564501368.95  REFERENCE NO :BO4273577315",
+  "txnId": "MP190808.0725.H00018",
+  "trId": "971255490201908080725H5000"
+
+21. Mulonga Water
+
+Request:
+{
+  "amount": "1000",
+  "bankId": "",
+  "currencyType": "ZMW",
+  "extra": "",
+  "fromDate": "",
+  "msisdn": "971255490",
+  "nickName": "MWSC",
+  "paymentType": "ZMPAYBILLS",
+  "pin": "1235",
+  "prefetchResponseCustomerReference": "",
+  "prn": "",
+  "productName": "",
+  "referenceNumber": "897979",
+  "schoolAgentCode": "",
+  "schoolCode": "",
+  "studentName": "",
+  "taxPayerName": "",
+  "tin": "",
+  "toDate": ""
+}
+
+Response: 200
+{
+  "status": "200",
+  "message": "Txn. ID : MP190808.0727.H00019. Payment to MWSC Account 897979 of ZMW 1000.00 is successful. Your Airtel Money balance is ZMW 564500368.95  REFERENCE NO :897979",
+  "txnId": "MP190808.0727.H00019",
+  "trId": "971255490201908080727H5010"
+}
+
+22. DATA
+
+Request:
+{
+  "amount": "1000",
+  "bankId": "",
+  "currencyType": "ZMW",
+  "extra": "",
+  "fromDate": "",
+  "msisdn": "971255490",
+  "nickName": "DATA",
+  "paymentType": "ZMPAYBILLS",
+  "pin": "1235",
+  "prefetchResponseCustomerReference": "",
+  "prn": "",
+  "productName": "",
+  "referenceNumber": "",
+  "schoolAgentCode": "",
+  "schoolCode": "",
+  "studentName": "",
+  "taxPayerName": "",
+  "tin": "",
+  "toDate": ""
+}
+
+Response: 200
+{
+  "status": "200",
+  "message": "Txn. ID : MP190808.1445.H00023,You have paid 1000.00ZMW to AIRTELDATA .Your available Airtel Money balance is ZMW 564481568.95.  REFERENCE NO :",
+  "txnId": "MP190808.1445.H00023",
+  "trId": "971255490201908081445H3143"
+}
+
+23.SOCHE
+Request:
+{
+  "amount": "1000",
+  "bankId": "",
+  "currencyType": "ZMW",
+  "extra": "",
+  "fromDate": "",
+  "msisdn": "971255490",
+  "nickName": "SOCHE",
+  "paymentType": "ZMPAYBILLS",
+  "pin": "1235",
+  "prefetchResponseCustomerReference": "",
+  "prn": "",
+  "productName": "",
+  "referenceNumber": "900215052164",
+  "schoolAgentCode": "",
+  "schoolCode": "",
+  "studentName": "",
+  "taxPayerName": "",
+  "tin": "",
+  "toDate": ""
+}
+
+Response:
+{
+  "status": "1008",
+  "error": "Bad request from the customer",
+  "message": "Trans Id:MP190809.0827.H00002 Payment to Test is in progress. Transaction Amt:1000.00 ZMW. Your balance is :564478568.95 ZMW  REFERENCE NO :900215052164"
+}
+

@@ -1,0 +1,101 @@
+{
+  "amount": "string", 		- mandatory
+  "currencyType": "string", 	- mandatory
+  "extra": "string", 		- optional
+  "fromDate": "string", 	- optional
+  "msisdn": "string", 		- mandatory
+  "nickName": "string",		- mandatory 
+  "paymentType": "string",	- mandatory
+  "pin": "string",		- mandatory
+  "prefetchResponseCustomerReference": "string", - optional
+  "prn": "string",				- optional
+  "productName": "string",			- optional
+  "referenceNumber": "string",			- mandatory
+  "schoolAgentCode": "string",
+  "schoolCode": "string",			- optional
+  "studentName": "string",			- optional
+  "taxPayerName": "string",			- optional
+  "tin": "string",				- optional
+  "toDate": "string" 				- optional
+}
+
+{
+  "amount": "10",
+  "currencyType": "TZS",
+  "extra": "",
+  "fromDate": "",
+  "msisdn": "788047029",
+  "nickName": "TTCL",
+  "paymentType": "UMEME-PAYMENT",
+  "pin": "1235",
+  "prefetchResponseCustomerReference": "",
+  "prn": "",
+  "productName": "",
+  "referenceNumber": "1000",
+  "schoolAgentCode": "",
+  "schoolCode": "",
+  "studentName": "",
+  "taxPayerName": "",
+  "tin": "",	
+  "toDate": ""
+}
+
+
+
+<COMMAND>^M
+<PARENT_STAGEID>g211</PARENT_STAGEID>
+<BPROVIDER>101</BPROVIDER>
+<DYNAMIC_OPTION_PREVIOUS_LIST>*</DYNAMIC_OPTION_PREVIOUS_LIST>
+<REFERENCE_NO>987654321</REFERENCE_NO>
+<OTHER_DETAILS>DSTV</OTHER_DETAILS>
+<PAYID1>12</PAYID1>
+<PAYID2>12</PAYID2>
+<RCVINSTRUMENT>12</RCVINSTRUMENT>
+<PAYID>12</PAYID>
+<LANGUAGE1>1</LANGUAGE1>
+<PIN>*</PIN>
+<LANGUAGE2>1</LANGUAGE2>
+<TYPE>CMPREQ</TYPE>
+<PROVIDER1>101</PROVIDER1>
+<PROVIDER2>101</PROVIDER2>
+<SNDPROVIDER>101</SNDPROVIDER>
+<AMOUNT>1000</AMOUNT>
+<STORE_FAV_MESSAGE>Y</STORE_FAV_MESSAGE>
+<SNDINSTRUMENT>12</SNDINSTRUMENT>
+<PREVIOUSSTAGE>19</PREVIOUSSTAGE>
+<MSISDN2>788017261</MSISDN2>
+<language>en</language>
+<PROVIDER>101</PROVIDER>
+<SERVICE_NAME>MERCHPAY</SERVICE_NAME>
+<RCVPROVIDER>101</RCVPROVIDER>
+<MSISDN>786670654</MSISDN>
+<TRID>786670654201907081819C0014</TRID></COMMAND>
+
+{
+  "amount": "10",
+  "currencyType": "TZS",
+  "msisdn": "788047029",
+  "nickName": "PPF",
+  "paymentType": "UMEME-PAYMENT",
+  "pin": "1235",
+  "prefetchResponseCustomerReference": "",
+  "productName": "",
+  "referenceNumber": "1000",
+  "schoolAgentCode": "",
+  "schoolCode": "",
+  "studentName": ""
+}
+
+Preftech Biller Details:
+Request:
+--------
+curl -X POST "http://172.27.0.142:30004/api/am-send-money/v1/am-pay-bill-prefetch" -H "accept: */*" -H "ASP-API-Key: 84cbd62d-81b8-47b4-a281-349ca8796105" -H "ASP-Consumer-Id: 045464d0-507f-430e-8628-2db468f7c9d7" -H "ASP-Consumer-Txn-Id: 971cb397-c337-4fa5-a90b-4dfc3afddfb3" -H "ASP-Locale: en-US" -H "ASP-OPCO: TZ" -H "ASP-Req-Timestamp: 1545133168" -H "Content-Type: application/json" -d "{ \"billerName\": \"TTCL\", \"msisdn\": \"788047029\", \"referenceNumber\": \"1000\"}"
+
+Response:
+---------
+Response Code: 500
+{
+  "error": "Internal server error",
+  "message": "500 Execution of the expression &quot;&#10;      payload = payload.replaceAll(&quot;&amp;&quot;,&quot;&amp;amp;&quot;);&#10;         &#10;      &#10;  &quot; failed. (org.mule.api.expression.ExpressionRuntimeException)."
+}
+
